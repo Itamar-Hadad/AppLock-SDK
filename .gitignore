@@ -1,0 +1,71 @@
+.DS_Store
+
+# Repo root opened directly in Android Studio (normal for this user's workflow)
+/.idea/
+/.gradle/
+
+# Agent tooling artifacts (e.g. Playwright MCP snapshots/screenshots from manual verification)
+/.playwright-mcp/
+
+# Pre-existing seminar deliverables - left out of git for now, per user request
+/CLAUDE.md
+/CONTEXT.md
+/docs/
+/files/
+/files.zip
+/AppLock SDK.pdf
+/מצגת לסמינר.pptx
+
+# Android / Gradle (sdk/)
+sdk/.gradle/
+sdk/.kotlin/
+sdk/build/
+sdk/*/build/
+sdk/local.properties
+sdk/.idea/
+sdk/*.iml
+sdk/captures/
+sdk/.cxx/
+
+# Android / Gradle (demo/)
+demo/.gradle/
+demo/build/
+demo/*/build/
+demo/local.properties
+demo/.idea/
+demo/*.iml
+demo/captures/
+demo/.cxx/
+
+# Node (server/)
+server/node_modules/
+server/dist/
+server/.env
+server/coverage/
+
+# Portal (React app)
+portal/node_modules/
+portal/dist/
+portal/.env
+portal/*.local
+portal/.vscode/*
+!portal/.vscode/extensions.json
+
+# Markdown - only README.md (one per project/component) is tracked;
+# issue-tracker docs (.scratch/) and any other notes stay local
+*.md
+!README.md
+
+# Test sources - not committed per project decision
+sdk/applocksdk/src/test/
+sdk/applocksdk/src/androidTest/
+demo/app/src/test/
+demo/app/src/androidTest/
+server/test/
+portal/src/**/*.test.ts
+portal/src/**/*.test.tsx
+portal/src/setupTests.ts
+portal/src/test/
+
+# Local scratch / issue tracker
+.scratch/

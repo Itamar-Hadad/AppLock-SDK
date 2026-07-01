@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SecureNotes</string>
+    <string name="add_note">Add note</string>
+    <string name="note_title_hint">Title</string>
+    <string name="note_content_hint">Take a note…</string>
+    <string name="action_control_panel">Control Panel</string>
+    <string name="new_note">New note</string>
+</resources>

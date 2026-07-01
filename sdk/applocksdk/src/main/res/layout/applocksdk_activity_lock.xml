@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/applocksdk_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="#0A0E1A"
+    android:padding="24dp">
+
+    <ImageView
+        android:id="@+id/applocksdk_logo"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="32dp"
+        android:visibility="gone"
+        android:contentDescription="@null" />
+
+    <TextView
+        android:id="@+id/applocksdk_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/applocksdk_dots_row"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="24dp">
+
+        <View android:id="@+id/applocksdk_dot_1" android:layout_width="14dp" android:layout_height="14dp" android:layout_margin="6dp" android:background="@drawable/applocksdk_dot_empty" />
+        <View android:id="@+id/applocksdk_dot_2" android:layout_width="14dp" android:layout_height="14dp" android:layout_margin="6dp" android:background="@drawable/applocksdk_dot_empty" />
+        <View android:id="@+id/applocksdk_dot_3" android:layout_width="14dp" android:layout_height="14dp" android:layout_margin="6dp" android:background="@drawable/applocksdk_dot_empty" />
+        <View android:id="@+id/applocksdk_dot_4" android:layout_width="14dp" android:layout_height="14dp" android:layout_margin="6dp" android:background="@drawable/applocksdk_dot_empty" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/applocksdk_number_pad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp">
+
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal">
+            <Button android:id="@+id/applocksdk_button_1" android:layout_width="64dp" android:layout_height="64dp" android:text="1" />
+            <Button android:id="@+id/applocksdk_button_2" android:layout_width="64dp" android:layout_height="64dp" android:text="2" />
+            <Button android:id="@+id/applocksdk_button_3" android:layout_width="64dp" android:layout_height="64dp" android:text="3" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal">
+            <Button android:id="@+id/applocksdk_button_4" android:layout_width="64dp" android:layout_height="64dp" android:text="4" />
+            <Button android:id="@+id/applocksdk_button_5" android:layout_width="64dp" android:layout_height="64dp" android:text="5" />
+            <Button android:id="@+id/applocksdk_button_6" android:layout_width="64dp" android:layout_height="64dp" android:text="6" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal">
+            <Button android:id="@+id/applocksdk_button_7" android:layout_width="64dp" android:layout_height="64dp" android:text="7" />
+            <Button android:id="@+id/applocksdk_button_8" android:layout_width="64dp" android:layout_height="64dp" android:text="8" />
+            <Button android:id="@+id/applocksdk_button_9" android:layout_width="64dp" android:layout_height="64dp" android:text="9" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal">
+            <View android:layout_width="64dp" android:layout_height="64dp" />
+            <Button android:id="@+id/applocksdk_button_0" android:layout_width="64dp" android:layout_height="64dp" android:text="0" />
+            <Button android:id="@+id/applocksdk_button_backspace" android:layout_width="64dp" android:layout_height="64dp" android:text="@string/applocksdk_backspace_label" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.applocksdk.PatternLockView
+        android:id="@+id/applocksdk_pattern_view"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_marginTop="40dp"
+        android:visibility="gone" />
+</LinearLayout>
